@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="favicon.svg">
+    <link rel="stylesheet" href="https://use.typekit.net/yif8prv.css">
+    <title>MINDSCAPE</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="particles-js"></div>
+        <canvas id="canvas1"></canvas>
+        <div id="text-box">
+            <img src="icon.svg" alt="icon" id="icon">
+            <span id="line">Greetings. Please help yourself to some dessert.</span>
+        </div>
+    </div>
+
+    <img src="cup.svg" id="cup">
+    <img src="cake.svg" id="cake">
+    <img src="table.png" id="table">
+    <img src="player.png" alt="the_girl" id="player">
+    <img src="npc.png" alt="the_devil" id="npc">
+    <script src="script.js"></script>
+    <script src="object.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS.load('particles-js', '/particles.json', function() {
+            console.log('callback - particles-js config loaded');
+        });
+    </script>
+    <audio id="BG" src="BG.wav" loop></audio>
+    <script src="music.js"></script>
+</body>
+</html>
